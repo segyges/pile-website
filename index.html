@@ -114,6 +114,7 @@
                                  </ul>
                                  </p>
                             </div>
+                            <p>Have a model that uses or evaluates on the Pile? <a href="mailto:contact@eleuther.ai">Let us know</a>!</p>
                             <!--div class="infoSubheadline">
                                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://stanford-qa.com" data-text="The Stanford Question Answering Dataset - 100,000+ questions for reading comprehension" data-via="stanfordnlp" data-size="large" data-hashtags="SQuAD">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><!-- Place this tag where you want the button to render. -->
                                 <a class="github-button" href="https://github.com/rajpurkar/SQuAD-explorer" data-icon="octicon-star" data-style="mega" data-count-href="/rajpurkarstargazers" data-count-api="/repos/rajpurkar/SQuAD-explorer#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star rajpurkar/SQuAD-explorer on GitHub">Star</a>
@@ -126,7 +127,8 @@
                                 <div class="infoHeadline">
                                     <h2>Leaderboard</h2>
                                 </div>
-                                <p>Have a model that uses or evaluates on the Pile? <a href="mailto:contact@eleuther.ai">Let us know</a>!</p>
+                                * indicates potential test-set overlap. Zero-shot indicates that not all the components of the Pile were present in the training data.
+                                
                                 <table class="table performanceTable">
                                     <tr>
                                        <th>
@@ -136,28 +138,58 @@
                                           Model
                                        </th>
                                        <th>
-                                          BPB
+                                          Test BPB
                                        </th>
                                     </tr>
-                                    <!--tr class="human-row">
-                                       </tr-->
-                                    <!--162.5-->
+
                                     <tr>
-                                       <td>
-                                          <p>
-                                             1
-                                          </p>
-                                          <span class="date label label-default">
-                                          Jan 1, 2021</span>
-                                       </td>
-                                       <td style="word-break:break-word;">
-                                          1.3B Tuned GPT-2 Baseline
-                                          <p class="institution"> EleutherAI</p>
-                                       </td>
-                                       <td>
-                                          <b>1.81</b>
-                                       </td>
-                                    </tr>
+                                        <td>
+                                           <p>
+                                              1
+                                           </p>
+                                           <span class="date label label-default">
+                                           Jan 1, 2021</span>
+                                        </td>
+                                        <td style="word-break:break-word;">
+                                           GPT-3 (Zero-Shot)*
+                                           <p class="institution"> OpenAI</p>
+                                        </td>
+                                        <td>
+                                           <b>0.7214</b>
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        <td>
+                                           <p>
+                                              2
+                                           </p>
+                                           <span class="date label label-default">
+                                           Jan 1, 2021</span>
+                                        </td>
+                                        <td style="word-break:break-word;">
+                                           Tuned GPT-2 Baseline
+                                           <p class="institution"> EleutherAI</p>
+                                        </td>
+                                        <td>
+                                           <b>1.0024</b>
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        <td>
+                                           <p>
+                                              3
+                                           </p>
+                                           <span class="date label label-default">
+                                           Jan 1, 2021</span>
+                                        </td>
+                                        <td style="word-break:break-word;">
+                                           GPT-2 (Zero-Shot)*
+                                           <p class="institution"> OpenAI</p>
+                                        </td>
+                                        <td>
+                                           <b>1.0481</b>
+                                        </td>
+                                     </tr>
                                  </table>
                             </div>
                         </div>
