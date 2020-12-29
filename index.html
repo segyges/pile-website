@@ -1,214 +1,26 @@
-<!DOCTYPE html><!--Author: Pranav Rajpurkar 2016-->
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>The Pile</title>
-        <meta name="description" content="The Pile is a 1.25 TiB diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together. By including as many different types of text data as possible, it ensures that models trained using the Pile will have much broader generalization abilities.">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <meta property="og:image" content="/logo.png">
-        <link rel="image_src" type="image/png" href="logo.png">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="stylesheets/layout.css">
-        <link rel="stylesheet" href="stylesheets/index.css">
-        <script async defer src="https://buttons.github.io/buttons.js"></script><script src="javascripts/analytics.js"></script>
-        <style>
-            .thin {
-            font-weight: 200;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="navbar navbar-default navbar-fixed-top" id="topNavbar" role="navigation">
-            <div class="container clearfix" id="navContainer">
-                <div class="rightNav">
-                    <div class="collapseDiv"><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="glyphicon glyphicon-menu-hamburger"></span></button></div>
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                               <a href="/">
-                               Home</a>
-                            </li>
-                         </ul>
-                    </div>
-                </div>
-                <div class="leftNav">
-                    <div class="brandDiv"><a class="navbar-brand" href="">The Pile</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="cover" id="topCover">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 id="appTitle">
-                            <span>
-                            <span class="thin">The</span> Pile
-                            </span>
-                         </h1>
-                        <h2 id="appSubtitle">A Terabyte of Diverse Text Data</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="cover" id="contentCover">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="infoCard">
-                            <div class="infoBody">
-                                <div class="infoHeadline">
-                                    <h2>What is the Pile?</h2>
-                                </div>
-                                <p>
-                                    The Pile is a <b>1.25 TiB</b> diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together. By including as many different types of text data as possible, it ensures that models trained using the Pile will have much broader generalization abilities.
-                                 </p>
-                                 <hr>
-                                 <p>
-                                    <a class="btn actionBtn" href="https://arxiv.org/abs/">
-                                    Pile Paper</a>
-                                 </p>
-                                 <p>
-                                    <a class="btn actionBtn" href="https://arxiv.org/abs/">
-                                    Pile Datasheet</a>
-                                 </p>
-                                 <hr>
-                                 <div class="infoHeadline">
-                                    <h2>
-                                       Why is the Pile a good training set?
-                                    </h2>
-                                 </div>
-                                 <p>
-                                    Recent work has shown that especially for large models, diversity in data sources improves general cross-domain knowledge of the model, as well as downstream generalization capability. As such, the diversity and high quality of data in the Pile means that large models trained on Pile will develop better generalization capabilities across the much broader types of text represented in Pile. 
-                                 </p>
-                                 <div class="infoHeadline">
-                                    <h2>
-                                       Why is the Pile a good benchmark?
-                                    </h2>
-                                 </div>
-                                 <p>
-                                     To score well on Pile BPB (bits per byte), a model must be able to understand many disparate domains including books, github repositories, webpages, chat logs, and medical, physics, math, computer science, and philosophy papers. Pile BPB is a measure of world knowledge and reasoning ability in these domains, making it a robust benchmark of general, cross-domain text modeling ability for large language models.
-                                 </p>
-                                 <div class="infoHeadline">
-                                    <h2>
-                                       Getting Started
-                                    </h2>
-                                 </div>
-                                 <p>
-                                    Download a copy of the dataset:
-                                 <ul class="list-unstyled">
-                                    <li>
-                                       <a class="btn actionBtn inverseBtn" href="example.com" download>
-                                       Training Set</a>
-                                    </li>
-                                    <li>
-                                       <a class="btn actionBtn inverseBtn" href="example.com" download>
-                                       Val Set</a>
-                                    </li>
-                                    <li>
-                                       <a class="btn actionBtn inverseBtn" href="example.com" download>
-                                       Test Set</a>
-                                    </li>
-                                 </ul>
-                                 </p>
-                            </div>
-                            <p>Have a model that uses or evaluates on the Pile? <a href="mailto:contact@eleuther.ai">Let us know</a>!</p>
-                            <!--div class="infoSubheadline">
-                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://stanford-qa.com" data-text="The Stanford Question Answering Dataset - 100,000+ questions for reading comprehension" data-via="stanfordnlp" data-size="large" data-hashtags="SQuAD">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><!-- Place this tag where you want the button to render. -->
-                                <a class="github-button" href="https://github.com/EleutherAI/The-Pile" data-icon="octicon-star" data-style="mega" data-count-href="/rajpurkarstargazers" data-count-api="/repos/rajpurkar/SQuAD-explorer#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star rajpurkar/SQuAD-explorer on GitHub">Star</a>
-                            </div-->
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="infoCard">
-                            <div class="infoBody">
-                                <div class="infoHeadline">
-                                    <h2>Leaderboard</h2>
-                                </div>
-                                * indicates potential test-set overlap. Zero-shot indicates that not all the components of the Pile were present in the training data.
-                                
-                                <table class="table performanceTable">
-                                    <tr>
-                                       <th>
-                                          Rank
-                                       </th>
-                                       <th>
-                                          Model
-                                       </th>
-                                       <th>
-                                          Test BPB
-                                       </th>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                           <p>
-                                              1
-                                           </p>
-                                           <span class="date label label-default">
-                                           Jan 1, 2021</span>
-                                        </td>
-                                        <td style="word-break:break-word;">
-                                           GPT-3 (Zero-Shot)*
-                                           <p class="institution"> OpenAI</p>
-                                        </td>
-                                        <td>
-                                           <b>0.7177</b>
-                                        </td>
-                                     </tr>
-                                     <tr>
-                                        <td>
-                                           <p>
-                                              2
-                                           </p>
-                                           <span class="date label label-default">
-                                           Jan 1, 2021</span>
-                                        </td>
-                                        <td style="word-break:break-word;">
-                                           Tuned GPT-2 Baseline
-                                           <p class="institution"> EleutherAI</p>
-                                        </td>
-                                        <td>
-                                           <b>1.0024</b>
-                                        </td>
-                                     </tr>
-                                     <tr>
-                                        <td>
-                                           <p>
-                                              3
-                                           </p>
-                                           <span class="date label label-default">
-                                           Jan 1, 2021</span>
-                                        </td>
-                                        <td style="word-break:break-word;">
-                                           GPT-2 (Zero-Shot)*
-                                           <p class="institution"> OpenAI</p>
-                                        </td>
-                                        <td>
-                                           <b>1.2253</b>
-                                        </td>
-                                     </tr>
-                                 </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-default navbar-static-bottom footer">
-            <div class="container clearfix">
-                <div class="rightNav">
-                    <div>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="">The Pile</a></li>
-                            <li><a href="https://www.eleuther.ai">EleutherAI</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <script src="bower_components/jquery/dist/jquery.min.js"></script><script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>The Pile</title>
+    <meta
+      name="description"
+      content="The Pile is a 1.25 TiB diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together. By including as many different types of text data as possible, it ensures that models trained using the Pile will have much broader generalization abilities."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta property="og:image" content="/logo.png" />
+    <link rel="image_src" type="image/png" href="logo.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div>Start</div>
+  </body>
 </html>
