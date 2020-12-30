@@ -29,11 +29,171 @@
         </div>
         <div class="logo-container right">
           <a class="logo-button" href="https://www.eleuther.ai/">
-            <img src="img/eleuther_icon.png" class="logo-button-icon" />
+            <img
+              src="img/eleuther_icon.png"
+              alt="EleutherAI logo"
+              class="logo-button-icon"
+            />
             <span class="logo-button-text">EleutherAI</span>
           </a>
         </div>
       </div>
     </header>
+    <section class="main-container">
+      <div class="content-wrapper">
+        <div class="grid-1-2">
+          <div class="content-box">
+            <h2 class="text-title">What is Pile?</h2>
+            <p class="text-content">
+              The Pile is a <span class="bold">1.25 TiB</span> diverse, open
+              source language modelling data set that consists of 22 smaller,
+              high-quality datasets combined together. By including as many
+              different types of text data as possible, it ensures that models
+              trained using the Pile will have much broader generalization
+              abilities.
+            </p>
+            <div class="buton-container">
+              <div>
+                <a class="button blue" href="https://arxiv.org/abs/"
+                  >Pile Paper</a
+                >
+              </div>
+              <div>
+                <a class="button green" href="https://arxiv.org/abs/"
+                  >Pile Datasheet</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-1-2">
+          <div class="content-box">
+            <p class="image-content">
+              <img src="img/icon_pile_animated_short.png" alt="Pile icon" />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="grid-1-2">
+          <div class="content-box">
+            <h2 class="text-title">Why is the Pile a good training set?</h2>
+            <p class="text-content">
+              Recent work has shown that especially for large models, diversity
+              in data sources improves general cross-domain knowledge of the
+              model, as well as downstream generalization capability. As such,
+              the diversity and high quality of data in the Pile means that
+              large models trained on Pile will develop better generalization
+              capabilities across the much broader types of text represented in
+              Pile.
+            </p>
+          </div>
+        </div>
+        <div class="grid-1-2">
+          <div class="content-box">
+            <h2 class="text-title">Leaderboard</h2>
+            <p class="text-content small-text">
+              * indicates potential test-set overlap. Zero-shot indicates that
+              not all the components of the Pile were present in the training
+              data.
+            </p>
+            <table class="content-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Model</th>
+                  <th>Test BPB</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p class="rank-number">1.</p>
+                    <p><span class="label-date">Jan 1.2021</span></p>
+                  </td>
+                  <td>
+                    <p class="model-type">GPT-3 (Zero-Shot)*</p>
+                    <p class="model-owner">OpenAI</p>
+                  </td>
+                  <td><p class="number">0.717</p></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="rank-number">2.</p>
+                    <p><span class="label-date">Jan 1.2021</span></p>
+                  </td>
+                  <td>
+                    <p class="model-type">Tuned GPT-2 Baseline</p>
+                    <p class="model-owner">EleutherAI</p>
+                  </td>
+                  <td><p class="number">1.0024</p></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="rank-number">3.</p>
+                    <p><span class="label-date">Jan 1.2021</span></p>
+                  </td>
+                  <td>
+                    <p class="model-type">GPT-2 (Zero-Shot)*</p>
+                    <p class="model-owner">OpenAI</p>
+                  </td>
+                  <td><p class="number">1.2253</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="grid-1-2">
+          <div class="content-box">
+            <h2 class="text-title">Why is the Pile a good benchmark?</h2>
+            <p class="text-content">
+              To score well on Pile BPB (bits per byte), a model must be able to
+              understand many disparate domains including books, github
+              repositories, webpages, chat logs, and medical, physics, math,
+              computer science, and philosophy papers. Pile BPB is a measure of
+              world knowledge and reasoning ability in these domains, making it
+              a robust benchmark of general, cross-domain text modeling ability
+              for large language models.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="grid-1-2">
+          <div class="content-box">
+            <h2 class="text-title">Getting started</h2>
+            <p class="text-content">Download a copy of the dataset:</p>
+            <div class="buton-container">
+              <div>
+                <a class="button unfilled" href="example.com" download
+                  >Training Set
+                  <img src="img/download_icon.svg" class="button-icon"
+                /></a>
+              </div>
+              <div>
+                <a class="button unfilled" href="example.com" download
+                  >Val Set <img src="img/download_icon.svg" class="button-icon"
+                /></a>
+              </div>
+              <div></div>
+              <a class="button unfilled" href="example.com" download
+                >Test Set <img src="img/download_icon.svg" class="button-icon"
+              /></a>
+            </div>
+          </div>
+          <p class="text-content">
+            Have a model that uses or evaluates on the Pile?
+            <a href="mailto:contact@eleuther.ai">Let us know</a>!
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-container">
+      <div class="content-wrapper">
+        <div class="footer-text">EleutherAI 2020</div>
+      </div>
+    </footer>
   </body>
 </html>
