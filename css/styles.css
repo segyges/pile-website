@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700;1,900&display=swap");
 
+:root {
+  --black: #2b2b2b;
+  --green: #699f56;
+  --blue: #34566f;
+  --grey: #959595;
+  --red: #aa4926;
+  --orange: #cc7832;
+}
+
 body,
 h1,
 h2,
@@ -22,7 +31,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #2b2b2b;
+  color: var(--black);
 }
 
 body {
@@ -32,7 +41,7 @@ body {
 
 .header-container {
   height: 3.1em;
-  background-color: #2b2b2b;
+  background-color: var(--black);
 }
 
 .content-wrapper {
@@ -52,7 +61,7 @@ body {
 h1.logo,
 .subtitle,
 .logo-button-text {
-  color: #ffffff;
+  color: white;
 }
 
 h1.logo {
@@ -70,16 +79,16 @@ h1.logo {
 }
 
 .logo-button {
-  background-color: #2b2b2b;
-  border: 1px solid #ffffff;
+  background-color: var(--black);
+  border: 1px solid var(--grey);
   margin-top: 0.8em;
   display: inline-block;
-  padding: 0.3em 1.7em;
+  padding: 0.15em 1.1em;
   position: relative;
 }
 
 .logo-button .logo-button-text {
-  font-size: 0.722em;
+  font-size: 0.6em;
   position: relative;
   bottom: 0.2em;
   left: 0.4em;
@@ -87,13 +96,15 @@ h1.logo {
 }
 
 .logo-button .logo-button-icon {
-  top: 0.3em;
+  top: 0.4em;
   left: 0.4em;
   position: absolute;
+  width: 11px;
+  height: 11px;
 }
 
 a.logo-button:hover {
   opacity: 0.9;
-  background-color: #444444;
+  background-color: var(--grey);
   cursor: pointer;
 }
