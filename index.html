@@ -5,7 +5,7 @@
     <title>The Pile</title>
     <meta
       name="description"
-      content="The Pile is a 1.25 TiB diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together. By including as many different types of text data as possible, it ensures that models trained using the Pile will have much broader generalization abilities."
+      content="The Pile is a 825 GiB diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together. "
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta
@@ -25,7 +25,7 @@
       <div class="content-wrapper">
         <div class="logo-container left">
           <h1 class="logo">The Pile</h1>
-          <span class="subtitle">A Terabyte of Diverse Text Data</span>
+          <span class="subtitle">An 800GB Dataset of Diverse Text for Language Modeling</span>
         </div>
         <div class="logo-container right">
           <a class="logo-button" href="https://www.eleuther.ai/">
@@ -45,12 +45,9 @@
           <div class="content-box">
             <h2 class="text-title">What is Pile?</h2>
             <p class="text-content">
-              The Pile is a <span class="bold">1.25 TiB</span> diverse, open
+              The Pile is a <span class="bold">825 GiB</span> diverse, open
               source language modelling data set that consists of 22 smaller,
-              high-quality datasets combined together. By including as many
-              different types of text data as possible, it ensures that models
-              trained using the Pile will have much broader generalization
-              abilities.
+              high-quality datasets combined together. 
             </p>
             <div class="buton-container">
               <div>
@@ -59,7 +56,7 @@
                 >
               </div>
               <div>
-                <a class="button green" href="https://arxiv.org/abs/"
+                <a class="button blue" href="https://arxiv.org/abs/"
                   >Pile Datasheet</a
                 >
               </div>
@@ -69,7 +66,7 @@
         <div class="grid-1-2">
           <div class="content-box">
             <p class="image-content">
-              <img src="img/icon_pile_animated_short.png" alt="Pile icon" />
+              <!--img src="img/icon_pile_animated_short.png" alt="Pile icon" /-->
             </p>
           </div>
         </div>
@@ -79,13 +76,7 @@
           <div class="content-box">
             <h2 class="text-title">Why is the Pile a good training set?</h2>
             <p class="text-content">
-              Recent work has shown that especially for large models, diversity
-              in data sources improves general cross-domain knowledge of the
-              model, as well as downstream generalization capability. As such,
-              the diversity and high quality of data in the Pile means that
-              large models trained on Pile will develop better generalization
-              capabilities across the much broader types of text represented in
-              Pile.
+              Recent work has shown that especially for large models, diversity in data sources improves general cross-domain knowledge of the model, as well as downstream generalization capability. In our evaluations, not only do models trained on the Pile show moderate improvements in traditional language modeling benchmarks, they also show significant improvements on Pile BPB.
             </p>
           </div>
         </div>
@@ -94,7 +85,7 @@
             <h2 class="text-title">Leaderboard</h2>
             <p class="text-content small-text">
               * indicates potential test-set overlap. Zero-shot indicates that
-              not all the components of the Pile were present in the training
+              not all of the components of the Pile were present in the training
               data.
             </p>
             <table class="content-table">
@@ -115,7 +106,7 @@
                     <p class="model-type">GPT-3 (Zero-Shot)*</p>
                     <p class="model-owner">OpenAI</p>
                   </td>
-                  <td><p class="number">0.717</p></td>
+                  <td><p class="number">0.7177</p></td>
                 </tr>
                 <tr>
                   <td>
@@ -126,7 +117,7 @@
                     <p class="model-type">Tuned GPT-2 Baseline</p>
                     <p class="model-owner">EleutherAI</p>
                   </td>
-                  <td><p class="number">1.0024</p></td>
+                  <td><p class="number">0.9433</p></td>
                 </tr>
                 <tr>
                   <td>
@@ -149,13 +140,7 @@
           <div class="content-box">
             <h2 class="text-title">Why is the Pile a good benchmark?</h2>
             <p class="text-content">
-              To score well on Pile BPB (bits per byte), a model must be able to
-              understand many disparate domains including books, github
-              repositories, webpages, chat logs, and medical, physics, math,
-              computer science, and philosophy papers. Pile BPB is a measure of
-              world knowledge and reasoning ability in these domains, making it
-              a robust benchmark of general, cross-domain text modeling ability
-              for large language models.
+              To score well on Pile BPB (bits per byte), a model must be able to understand many disparate domains including books, github repositories, webpages, chat logs, and academic papers across medicine, physics, math, computer science, and philosophy. Pile BPB is a measure of world knowledge and reasoning ability in these domains, making it a robust benchmark of general, cross-domain text modeling ability for large language models.
             </p>
           </div>
         </div>
