@@ -65,6 +65,10 @@ body {
   max-width: 100%;
 }
 
+.content-box {
+  margin: 1em 0;
+}
+
 .logo-container.left {
   display: flex;
 }
@@ -322,4 +326,8 @@ th {
 /* Desktop */
 
 @media (min-width: 1140px) {
+  .content-wrapper {
+    max-width: 1020px;
+    flex-direction: row;
+  }
 }
