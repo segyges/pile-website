@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700;1,900&display=swap");
 
 :root {
-  --black: #2b2b2b;
+  --black: #000000;
   --green: #699f56;
   --blue: #34566f;
   --grey: #959595;
+  --grey2: #d8d8d8;
   --red: #aa4926;
   --orange: #cc7832;
 }
@@ -37,6 +38,10 @@ a {
 
 .bold {
   font-weight: bold;
+}
+
+.centralize-text {
+  text-align: center;
 }
 
 body {
@@ -134,18 +139,29 @@ h2.text-title {
   font-weight: bold;
   color: var(--black);
   padding: 0.2em 0;
-  border-bottom: 2px solid var(--black);
   margin-bottom: 0.3em;
 }
 
 .text-content {
-  font-size: 1em;
-  line-height: 1.42em;
+  font-size: 0.95em;
+  line-height: 1.6667em;
   font-weight: 500;
+  text-align: left;
 }
 
 .text-content a {
-  color: var(--green);
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.text-content.centralize-text {
+  text-align: center;
+}
+
+.code-segment {
+  white-space: pre-wrap;
+  padding: 0.5em;
+  font-size: 0.9em;
 }
 
 .small-text {
@@ -173,12 +189,11 @@ h2.text-title {
 
 .buton-container button.button,
 .buton-container a.button {
-  width: 15.3em;
+  width: 12.3em;
   height: 2.22em;
   margin-bottom: 1em;
   color: white;
   border: 0 none;
-  border-radius: 1em;
   cursor: pointer;
   display: inline-block;
   padding: 0.45em 0;
@@ -202,9 +217,9 @@ a.button.blue {
 button.button.unfilled,
 a.button.unfilled {
   background-color: transparent;
-  border: 2px solid var(--blue);
+  border: 1px solid var(--blue);
   color: var(--blue);
-  font-weight: bold;
+  font-weight: normal;
   position: relative;
 }
 button.button.unfilled:hover,
@@ -286,6 +301,11 @@ th {
 .footer-text {
   margin-left: auto;
   font-size: 0.6em;
+  color: white;
+}
+
+.footer-text a {
+  text-decoration: underline;
   color: white;
 }
 
